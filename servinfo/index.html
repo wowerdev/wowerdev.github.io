@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Топ игроки сервера</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="legend">
+    <div class="legend__wrap">
+      <aside class="legend__aside">
+        <h1 class="legend__title">Информация о сервере</h1>
+        <nav class="legend__nav">
+          <ul class="legend__menu">
+            <li class="legend__menu-item">
+              <button data-type="status" class="btn legend__menu-btn">Статистика сервера</button>
+            </li>
+            <li class="legend__menu-item">
+              <button data-type="online" class="btn legend__menu-btn">Игроки онлайн</button>
+            </li>
+            <li class="legend__menu-item">
+              <button data-type="gild" class="btn legend__menu-btn">Гильдии сервера</button>
+            </li>
+            <li class="legend__menu-item">
+              <button data-type="ban" class="btn legend__menu-btn">Бан лист</button>
+            </li>
+
+          </ul>
+        </nav>
+        <button class="btn legend__back" onclick="window.history.back();">Вернуться назад</button>
+        <div class="legend__aside-img">
+          <img src="img/drenei.png" class="legend__aside-img" alt="Информация о сервере" title="Информация о сервере">
+        </div>
+      </aside>
+      <section class="legend__section">
+        <h2 class="legend__subtitle"><span></span></h2>
+
+        <ul class="legend__list active" data-type="online">
+          <li class="legend__online-block">
+            <ul class="legend__online-list">
+              <li class="legend__online-item">
+                <p class="legend__online-p legend__online-p--all">Общий онлайн: <span class="orange">143</span> чел.</p>
+              </li>
+              <li class="legend__online-item">
+                <p class="legend__online-p"><img src="img/alliance.png" alt="Альянс Онлайн">Альянс: <span class="orange">65</span> чел.</p>
+              </li>
+              <li class="legend__online-item">
+                <p class="legend__online-p"><img src="img/horde.png" alt="Орда Онлайн">Орда: <span class="orange">78</span> чел.</p>
+              </li>
+              <li class="legend__online-item legend__online-item--online">
+                <p class="legend__online-p legend__online-p--list"><span class="orange">Список игроков онлайн: </span></p>
+              </li>
+            </ul>
+          </li>
+          <li class="legend__item legend__item--table">
+            <table class="legend__table">
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Дэвид</td>
+                <td class="legend__table-td legend__table-td--class"><span class="hunter">Охотник</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Джайна</td>
+                <td class="legend__table-td legend__table-td--class"><span class="mage">Маг</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Трал</td>
+                <td class="legend__table-td legend__table-td--class"><span class="shaman">Шаман</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Артас</td>
+                <td class="legend__table-td legend__table-td--class"><span class="dk">Рыцарь смерти</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Утер</td>
+                <td class="legend__table-td legend__table-td--class"><span class="paladin">Паладин</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Ролин</td>
+                <td class="legend__table-td legend__table-td--class"><span class="priest">Жрец</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Доливуд</td>
+                <td class="legend__table-td legend__table-td--class"><span class="dk">Рыцарь смерти</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Проззаичный</td>
+                <td class="legend__table-td legend__table-td--class"><span class="paladin">Паладин</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Хитрый</td>
+                <td class="legend__table-td legend__table-td--class"><span class="rogue">Разбойник</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Джайна</td>
+                <td class="legend__table-td legend__table-td--class"><span class="mage">Маг</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Трал</td>
+                <td class="legend__table-td legend__table-td--class"><span class="shaman">Шаман</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Артас</td>
+                <td class="legend__table-td legend__table-td--class"><span class="dk">Рыцарь смерти</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Утер</td>
+                <td class="legend__table-td legend__table-td--class"><span class="paladin">Паладин</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Ролин</td>
+                <td class="legend__table-td legend__table-td--class"><span class="priest">Жрец</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Доливуд</td>
+                <td class="legend__table-td legend__table-td--class"><span class="dk">Рыцарь смерти</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+              <tr class="legend__table-tr">
+                <td class="legend__table-td legend__table-td--race"><img src="img/horde.png" alt="Расса"></td>
+                <td class="legend__table-td legend__table-td--name">Проззаичный</td>
+                <td class="legend__table-td legend__table-td--class"><span class="paladin">Паладин</span></td>
+                <td class="legend__table-td legend__table-td--scope"><b>80</b> лвл.</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+
+        <ul class="legend__list active" data-type="status">
+          <li class="legend__status-block">
+            <ul class="legend__status-list">
+              <li class="legend__status-item">
+                <p class="legend__status-p">Состояние сервера: <span class="server-status server-status--on"></span> работает.</p>
+              </li>
+              <li class="legend__status-item">
+                <p class="legend__status-p">Аптайм: <span class="orange">1д 20ч</span></p>
+              </li>
+              <li class="legend__status-item">
+                <p class="legend__status-p">Максимальный онлайн: <span class="orange">420</span> чел.</p>
+              </li>
+              <li class="legend__status-item">
+                <p class="legend__status-p"><img src="img/horde.png" alt="Орда">Персонажей за орду: <span class="orange">315</span></p>
+              </li>
+              <li class="legend__status-item">
+                <p class="legend__status-p"><img src="img/alliance.png" alt="Альянс">Персонажей за альянс: <span class="orange">286</span></p>
+              </li>
+              <li class="legend__status-item">
+                <p class="legend__status-p">Всего аккаунтов: <span class="orange">345</span></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="legend__list active" data-type="gild">
+          <li class="legend__online-block">
+            <ul class="legend__online-list">
+              <li class="legend__online-item">
+                <p class="legend__online-p legend__online-p--all">Всего гильдий: <span class="orange">10</span> шт.</p>
+              </li>
+              <li class="legend__online-item legend__online-item--online">
+                <p class="legend__online-p legend__online-p--list"><span class="orange no-margin">Популярные гильдии: </span></p>
+              </li>
+            </ul>
+          </li>
+          <li class="legend__item legend__item--table">
+            <table class="legend__table">
+              <thead>
+                <tr class="legend__table-tr">
+                  <th class="legend__table-th">Название</th>
+                  <th class="legend__table-th nomob">Основатель</th>
+                  <th class="legend__table-th nomob">Дата создания</th>
+                  <th class="legend__table-th legend__table-th--right">Кол-во людей</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Парагон</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">Араторгус</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">20.04.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope"><b>2351</b> чел.</td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Культ мертвого мурлока</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">Специфик</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">22.04.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope"><b>2231</b> чел.</td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Мы не палы</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">Рофкол</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">20.01.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope"><b>1561</b> чел.</td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">автостопщики</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">Ронин</span></td>
+                  <td class="legend__table-td legend__table-td--name nomob"><span class="orange">11.02.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope"><b>251</b> чел.</td>
+                </tr>
+      
+              </tbody>
+
+            </table>
+          </li>
+        </ul>
+
+        <ul class="legend__list active" data-type="ban">
+          <li class="legend__item legend__item--table">
+            <table class="legend__table">
+              <thead>
+                <tr class="legend__table-tr">
+                  <th class="legend__table-th">Аккаунт</th>
+                  <th class="legend__table-th">Дата бана</th>
+                  <th class="legend__table-th">Дата разбана</th>
+                  <th class="legend__table-th legend__table-th--right nomob">Забанил</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Милвуд</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.03.2018</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.04.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope nomob"><span class="blue">Одмин</span></td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Обреченый</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.03.2018</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.04.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope nomob"><span class="blue">Гамельтон</span></td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Ролав</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.03.2018</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Никогда</span></td>
+                  <td class="legend__table-td legend__table-td--scope nomob"><span class="blue">Одмин</span></td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Пенсро</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.03.2018</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.04.2018</span></td>
+                  <td class="legend__table-td legend__table-td--scope nomob"><span class="blue">Отрок</span></td>
+                </tr>
+                <tr class="legend__table-tr">
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Логам</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">20.03.2018</span></td>
+                  <td class="legend__table-td legend__table-td--name"><span class="orange">Никогда</span></td>
+                  <td class="legend__table-td legend__table-td--scope nomob"><span class="blue">Гамельтон</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </main>
+  <script src="js/scripts.min.js"></script>
+  
+</body>
+
+</html>
